@@ -11,28 +11,65 @@ font-family: "Flavors", cursive; snow effect handwriting
     --light-red: #d03b33;
     --dark-red: #b92213;
     --light-brown: #967748;
-    --dark-brown: #6f5747;
+    --dark-brown: #523a2a;
 }
 
 html, body {
     margin: 0;
     padding: 0;
+    cursor: url("unwrap/mitten.png") 16 16, auto;
+    overflow: hidden;
 }
 
 .open-gift-section {
     background-color: var(--beige);
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     box-sizing: border-box;
-    margin-top: -1rem; /* fix spacing at top */
+    margin-top: -.5rem; /* fix spacing at top */
     padding: 0;
 }
 
 .open-gift-section p {
     font-family: "Henny Penny", Arial;
     color: var(--dark-brown);
+    
+    font-size: 1.5rem;
+    position: absolute;
+    text-align: right;
+    top: 90%;
+    left: 63%;
 }
 
-#box-instruction {
+.tag-box {
+    position: absolute;
+    transform: rotate(7deg)
+}
 
+.tagbox:hover {
+    transform: rotate(18deg);
+}
+
+#tag {
+    width: 13.5rem;
+    top: 54%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+}
+
+#tag-text {
+    font-family: "Henny Penny", Arial;
+    color: var(--dark-brown);
+    font-size: .5rem;
+    top: 62%;
+    left: 38.5%;
+    transform: translate(-50%, -50%);
+}
+
+#bow {
+    width: 17rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
