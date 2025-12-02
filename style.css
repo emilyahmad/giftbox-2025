@@ -41,34 +41,43 @@ html, body {
     left: 63%;
 }
 
-.tag-box {
-    transform: rotate(7deg);
-    width: 100%;
-    height: 100%;
+p:hover {
+    cursor: url("unwrap/mitten.png") 16 16, auto;
 }
+
+.tag-box {
+    position: absolute;
+    transform: rotate(7deg);
+    top: 68%;
+    left: 40%;
+    transform: translate(-80%, -40%);
+}
+
 
 .tag-box #tag {
     position: absolute;
     width: 13.5rem;
-    top: 68%;
-    left: 42%;
-    transform: translate(-50%, -50%);
 }
-
-.tag-box #tag-text {
-    position: absolute;
-    font-family: "Henny Penny", Arial;
-    color: var(--dark-brown);
-    font-size: .6rem;
-    top: 65%;
-    left: 41.5%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
+/*
 .tag-box:hover {
     transform: rotate(18deg);
+    cursor: url("unwrap/mitten.png") 16 16, auto;
+    transition: 700ms;
 }
+
+
+#tag-text {
+    font-family: "Henny Penny", Arial;
+    color: var(--dark-brown);
+    font-size: .9rem;
+    position: absolute;
+    top: 68%;
+    left: 40%;
+    transform: translate(-80%, -40%);
+    text-align: center;
+    line-height: 1.2;
+    transform: rotate(7deg);
+}*/
 
 #bow {
     width: 17rem;
@@ -76,6 +85,11 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#bow:hover {
+    transform: translate(-50%, -50%) rotate(15deg) scale(1.05);
+    transition: 700ms;
 }
 
 .horizontal-ribbon {
