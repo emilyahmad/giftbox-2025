@@ -6,12 +6,12 @@ font-family: "Flavors", cursive; snow effect handwriting
 */
 
 :root {
-    --snow: #fffaed
-    --beige: #ece2c8
-    --light-red: #d03b33
-    --dark-red: ##b92213
-    --light-brown: #967748
-    --dark-brown: #6f5747 
+    --snow: #fffaed;
+    --beige: #ece2c8;
+    --light-red: #d03b33;
+    --dark-red: #b92213;
+    --light-brown: #967748;
+    --dark-brown: #6f5747;
 }
 
 html, body {
@@ -20,7 +20,19 @@ html, body {
 }
 
 .open-gift-section {
-    background-color: var(--dark-red);
+    background-color: var(--beige);
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
+    margin-top: -1rem; /* fix spacing at top */
+    padding: 0;
+}
+
+.open-gift-section p {
+    font-family: "Henny Penny", Arial;
+    color: var(--dark-brown);
+}
+
+#box-instruction {
+
 }
