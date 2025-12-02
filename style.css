@@ -41,27 +41,31 @@ html, body {
 
 .tag-box {
     position: absolute;
-    top: 68%;
-    left: 40%;
-    transform: translate(-80%, -40%);
+    top: 53%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(3deg);
+}
+
+.tag-box:hover {
+    transform: rotate(10deg);
+    transition: 700ms;
 }
 
 #tag {
     position: absolute;
     width: 13.5rem;
-    top: 10%;
-    left: 180%;
-    transform: translate(-80%, -40%);
 }
 
 #tag-text {
-    font-family: "Henny Penny", Arial;
-    color: var(--dark-brown);
-    font-size: .9rem;
+    font-size: .7rem;
+    font-family: "Henny Penny", system-ui;
     position: absolute;
-    text-align: center;
-    line-height: 1.2;
-
+    top: 80%;
+    left: 38%;
+    transform: translate(72%, 100%) rotate(3deg);
+    line-height: 2;
+    color: var(--dark-brown);
+    white-space: nowrap;
 }
 
 #bow {
@@ -78,6 +82,8 @@ html, body {
 }
 
 .horizontal-ribbon {
+    position: absolute;
+    z-index: 0;
     width: 40rem;
     height: 40rem;
     background-color: var(--light-red);
