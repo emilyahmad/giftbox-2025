@@ -24,16 +24,14 @@ html, body {
 .open-gift-section {
     background-color: var(--beige);
     width: 100vw;
-    height: 101vh;
+    height: 110vh;
     box-sizing: border-box;
-    margin-top: -.5rem; /* fix spacing at top */
     padding: 0;
 }
 
-.open-gift-section p {
+#instruction-p {
     font-family: "Henny Penny", Arial;
     color: var(--dark-brown);
-    
     font-size: 1.5rem;
     position: absolute;
     text-align: right;
@@ -41,43 +39,30 @@ html, body {
     left: 63%;
 }
 
-p:hover {
-    cursor: url("unwrap/mitten.png") 16 16, auto;
-}
-
 .tag-box {
     position: absolute;
-    transform: rotate(7deg);
     top: 68%;
     left: 40%;
     transform: translate(-80%, -40%);
 }
 
-
-.tag-box #tag {
+#tag {
     position: absolute;
     width: 13.5rem;
+    top: 10%;
+    left: 180%;
+    transform: translate(-80%, -40%);
 }
-/*
-.tag-box:hover {
-    transform: rotate(18deg);
-    cursor: url("unwrap/mitten.png") 16 16, auto;
-    transition: 700ms;
-}
-
 
 #tag-text {
     font-family: "Henny Penny", Arial;
     color: var(--dark-brown);
     font-size: .9rem;
     position: absolute;
-    top: 68%;
-    left: 40%;
-    transform: translate(-80%, -40%);
     text-align: center;
     line-height: 1.2;
-    transform: rotate(7deg);
-}*/
+
+}
 
 #bow {
     width: 17rem;
