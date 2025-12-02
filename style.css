@@ -42,28 +42,32 @@ html, body {
 }
 
 .tag-box {
+    transform: rotate(7deg);
+    width: 100%;
+    height: 100%;
+}
+
+.tag-box #tag {
     position: absolute;
-    transform: rotate(7deg)
-}
-
-.tagbox:hover {
-    transform: rotate(18deg);
-}
-
-#tag {
     width: 13.5rem;
-    top: 54%;
-    left: 34%;
+    top: 68%;
+    left: 42%;
     transform: translate(-50%, -50%);
 }
 
-#tag-text {
+.tag-box #tag-text {
+    position: absolute;
     font-family: "Henny Penny", Arial;
     color: var(--dark-brown);
-    font-size: .5rem;
-    top: 62%;
-    left: 38.5%;
+    font-size: .6rem;
+    top: 65%;
+    left: 41.5%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tag-box:hover {
+    transform: rotate(18deg);
 }
 
 #bow {
@@ -72,4 +76,11 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.horizontal-ribbon {
+    width: 40rem;
+    height: 40rem;
+    background-color: var(--light-red);
+    border: 2px solid var(--dark-red);
 }
